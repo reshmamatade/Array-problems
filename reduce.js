@@ -1,5 +1,4 @@
 const students = require("./data/student.json");
-
 // shubham
 let f = students.reduce((acc, itm) => (acc += itm.Name), " ").split("");
 console.log(f);
@@ -11,3 +10,8 @@ console.log(a);
 // piyush
 let b = students.map((items) => items.Seat[1]);
 console.log(b);
+
+// reshma matade
+let concate=students.reduce((acc,item)=>(acc= acc + item.Name),"")
+console.log(concate)
+
