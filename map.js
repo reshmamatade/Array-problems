@@ -15,8 +15,21 @@ let classes=students.map((student)=>{
         return "small";
     }
     if(student.Class<=20){
-        return "medium"
+        return "medium";
     }
-    return "large"
+    return "large";
 });
-console.log(classes)
+console.log(classes);
+// shubham
+let s = students
+    .map((items) => items.Persona)
+    .filter((h) => h > 3)
+    .sort((a, b) => a - b);
+console.log(s);
+
+// piyush
+let p = students
+    .map((items) => items.ID)
+    .filter((d) => d >= 10)
+    .reduce((acc, c) => (acc = acc + +c), 0);
+console.log(p);
