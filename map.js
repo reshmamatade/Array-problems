@@ -8,5 +8,12 @@ const students = require("./data/student.json");
 // let c = b.sort();
 // console.log(c);
 // map value of class then sort by assending order
-let d = students.map((items) => items.Class).sort((a, b) => +a - +b);
-console.log(d);
+// let d = students.map((items) => items.Class).sort((a, b) => +a - +b);
+// console.log(d);
+
+let h=students.map((items) => items.Gender);
+    console.log(h);
+
+
+
+
