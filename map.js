@@ -15,11 +15,6 @@ const students = require("./data/student.json");
 // himani
 let h=students.map((items) => items.Gender);
     console.log(h);
-
-
-
-
-=======
 // reshma
 let classes=students.map((student)=>{
     if(student.Class<=10){
