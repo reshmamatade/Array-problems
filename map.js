@@ -1,4 +1,5 @@
 const students = require("./data/student.json");
+
 // console.log(students);
 // map value color
 // let a = students.map((items) => items.Color);
@@ -13,7 +14,14 @@ const students = require("./data/student.json");
 
 // shubham
 let s = students
-  .map((items) => items.Persona)
-  .filter((h) => h > 3)
-  .sort((a, b) => a - b);
+    .map((items) => items.Persona)
+    .filter((h) => h > 3)
+    .sort((a, b) => a - b);
 console.log(s);
+
+// piyush
+let p = students
+    .map((items) => items.ID)
+    .filter((d) => d >= 10)
+    .reduce((acc, c) => (acc = acc + +c), 0);
+console.log(p);
