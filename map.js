@@ -10,6 +10,7 @@ const students = require("./data/student.json");
 // map value of class then sort by assending order
 // let d = students.map((items) => items.Class).sort((a, b) => +a - +b);
 // console.log(d);
+// reshma
 let classes=students.map((student)=>{
     if(student.Class<=10){
         return "small";
